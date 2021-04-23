@@ -1,0 +1,47 @@
+body{
+background-image:url(https://img.freepik.com/vector-gratis/fondo-casino-realista_52683-8948.jpg?size=626&ext=jpg);
+}
+
+.dado{
+background-image:url(https://i.pinimg.com/originals/0b/61/ba/0b61ba096406865f0e76a9b07e36dc69.png);
+background-position:-803px;
+width:157px;
+height:156px;
+
+
+}
+#contenedor_dados{
+display:flex;
+width:315px;
+margin: auto;
+}
+
+#boton_tirar{
+  padding: .6rem 1rem;
+  border: 1px solid #995309;
+  border-radius: 11px;
+  background-color: #d9750b;
+  color: #fff;
+
+  margin-left: 730px;
+
+  font-size: 1.5rem;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+  box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
+    0 1px 3px rgba(0,0,0,.2);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f90),to(#e76a00));
+  background-image: linear-gradient(#f90 10%,#e76a00 100%);
+}
+
+#boton_tirar:hover, #boton_tirar:focus {
+  background-color: #e0811b;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+  background-image: linear-gradient(#f0a100 10%,#f70 100%);
+}
+
+#boton_tirar:active {
+  background-color: #cf6a00;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.2) inset;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+  background-image: linear-gradient(#f0a100 10%,#f70 100%);
+}
