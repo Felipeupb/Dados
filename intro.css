@@ -47,6 +47,12 @@ margin: auto;
   background-image: linear-gradient(#f0a100 10%,#f70 100%);
 }
 
+#credit
+{
+	margin: auto;
+	background-color: blue;
+}
+
 #reglas{
   color: white;
   margin-top: 50px;
