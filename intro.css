@@ -1,5 +1,6 @@
 body{
-background-image:url(https://img.freepik.com/vector-gratis/fondo-casino-realista_52683-8948.jpg?size=626&ext=jpg);
+background-image:url(https://image.freepik.com/vector-gratis/rueda-ruleta-casino-fichas-casino-mesa-verde_43605-2903.jpg);
+background-size: 100%;
 }
 
 .dado{
@@ -44,4 +45,17 @@ margin: auto;
   box-shadow: 0 2px 3px 0 rgba(0,0,0,.2) inset;
   background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
   background-image: linear-gradient(#f0a100 10%,#f70 100%);
+}
+
+#reglas{
+  color: white;
+  margin-top: 50px;
+  
+}
+
+#textoReglas{
+  color: white;
+  margin-right: 170px;
+  text-align: right;
+  margin-top: 50px;
 }
