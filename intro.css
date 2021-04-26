@@ -8,6 +8,7 @@ background-image:url(https://i.pinimg.com/originals/0b/61/ba/0b61ba096406865f0e7
 background-position:-803px;
 width:157px;
 height:156px;
+margin-left: 694px;
 
 
 }
@@ -23,6 +24,7 @@ margin: auto;
   border-radius: 11px;
   background-color: #d9750b;
   color: #fff;
+  margin-top: 20px;
 
   margin-left: 730px;
 
@@ -49,19 +51,30 @@ margin: auto;
 
 #credit
 {
-	margin: auto;
+	margin left: 100px;
 	background-color: blue;
 }
 
 #reglas{
   color: white;
   margin-top: 50px;
-  
+  text-align: right;
+  margin-right: 170px;
 }
 
 #textoReglas{
   color: white;
   margin-right: 170px;
   text-align: right;
+  margin-top: 1px;
+}
+
+#nombre{
+  color: gold;
   margin-top: 50px;
+}
+
+#puntosTexto{
+  margin-left: 650px;
+  color: white;
 }
