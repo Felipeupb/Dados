@@ -9,26 +9,32 @@
 	<script src="intro.js"></script>
 
 </head>
+
 <body>
 	<center><h1 id="nombre">🎲CRAPS🎲</h1></center>
-	<h2 id="reglas">REGLAS DEL JUEGO📜</h2>
-  <p id= "textoReglas">
-    	1. Si en el primer tiro el jugador obtiene 7 (siete) u 11 (once) Gana la partida</br>
-		2. Si en el primer tiro el jugador obtiene 2 (dos), 3(tres) o 12(doce)Pierde la partida</br>
-		3. Si en el primer tiro obtiene  4 (cuatro), 5 (cinco), 6 (seis), 8 (ocho), 9 (nueve), ó 10 (diez), estableceel PUNTO.</br>
-		4. El tirador tiene que arrojar los dados tantas veces como sea necesario, hasta obtener el número que busca (Punto). </br>Si antes sale el 7(siete), El jugador pierde.</p>
-  </p>
+		<h2 id="reglas">REGLAS DEL JUEGO📜</h2>
+			<div id=contenedor></div>
+  				<p id= "textoReglas">
+    				1️⃣. Si en el primer tiro el jugador obtiene 7 u 11. Gana la partida.</br>
+					2️⃣. Si en el primer tiro el jugador obtiene 2, 3 o 12. Pierde la partida.</br>
+					3️⃣. Si en el primer tiro obtiene  4, 5, 6, 8, 9, ó 10. Establece el Punto.</br>
+					4️⃣. El tirador tiene que arrojar los dados tantas veces como sea necesario,</br>
+					hasta obtener el número que busca. Si antes sale el 7, El jugador pierde.</p>
+  				</p>
+  			</div>
 
 	<div id="puntosTexto"><h3>Puntos :</h3><div id="Puntos"></div></div>
 	<div id="contendor-dados">
 		<div id="dado1" class="dado"></div>
 		<div id="dado2" class="dado"></div>
 	</div>
+
 	<input type="button" value="Tirar" id="boton_tirar">
 
 	</br>
-	
-	<input type="button" value="Creditos" id="credit" onclick="window.location='creditos.html'">
-	
+
+		<input type="button" value="Créditos" id="credit" onclick="window.location='creditos.html'">
+
+
 </body>
 </html>

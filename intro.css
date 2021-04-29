@@ -8,7 +8,7 @@ background-image:url(https://i.pinimg.com/originals/0b/61/ba/0b61ba096406865f0e7
 background-position:-803px;
 width:157px;
 height:156px;
-margin-left: 694px;
+margin-left: 689px;
 
 
 }
@@ -52,29 +52,49 @@ margin: auto;
 #credit
 {
 	margin left: 100px;
-	background-color: blue;
+	background-color: #9ACD32;
 }
 
 #reglas{
   color: white;
   margin-top: 50px;
   text-align: right;
-  margin-right: 170px;
+  margin-right: 185px;
+  font-family: Cambria;
 }
 
 #textoReglas{
-  color: white;
-  margin-right: 170px;
   text-align: right;
-  margin-top: 1px;
+  font-family: Franklin Gothic Medium;
+  color: white;
+  margin-right: 185px;
+  border-radius: 30px;
+  border-left-width: 789px;
+  background-color: #2E8B57;
+  padding: 10px;
+  margin-left: 770px;
+
+
 }
 
 #nombre{
   color: gold;
   margin-top: 50px;
+  font-family: Cambria;
+  font-size: 45px;
 }
 
 #puntosTexto{
-  margin-left: 650px;
+  margin-left: 695px;
   color: white;
+  font-family: Franklin Gothic Medium;
+}
+
+.rules{
+  background: grey;
+}
+
+#credit
+{
+  margin-left: 1200px;
 }
