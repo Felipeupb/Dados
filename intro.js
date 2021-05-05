@@ -4,6 +4,7 @@
 	var dado1,dado2,boton_tirar;
 	var suma = 0;
 	var puntos = 0;
+	var turno = 0;
 
 
 	window.onload = init;
@@ -35,15 +36,36 @@
 
 		if (suma == 7 || suma == 11) 
 		{
+
 			alert("bien");
 		}else
 		 if (suma == 2 || suma == 3 || suma== 12) 
 		{
 
 		}else 
+		{
+			if (turno==1) 
+			{
+				puntos = suma;
+			}
+			if (suma == puntos && turno>1) 
+			{
+				//gano
+			}else
+			{
+				if (suma == 7) 
+				{
+					//perdiste
+				}else
+				{
+					
+				}
+			}
+		}
+
 		if (suma == 4 || suma == 5 || suma == 6 || suma == 8 || suma == 9 || suma == 10) 
 		{
-			puntos+= 1;
+			puntos= suma;
 
 		}else 
 		if ( puntos == 0 && suma == 7) 
