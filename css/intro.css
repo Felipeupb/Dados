@@ -1,0 +1,153 @@
+body{
+background-image:url(https://image.freepik.com/vector-gratis/rueda-ruleta-casino-fichas-casino-mesa-verde_43605-2903.jpg);
+background-size: 100%;
+}
+
+.dado{
+background-image:url(https://i.pinimg.com/originals/0b/61/ba/0b61ba096406865f0e76a9b07e36dc69.png);
+background-position:-803px;
+width:157px;
+height:156px;
+margin-left: 689px;
+
+
+}
+#contenedor_dados{
+display:flex;
+width:315px;
+margin: auto;
+}
+
+#boton_tirar{
+  padding: .6rem 1rem;
+  border: 1px solid #995309;
+  border-radius: 11px;
+  background-color: #d9750b;
+  color: #fff;
+  margin-top: 20px;
+
+  margin-left: 730px;
+
+  font-size: 1.5rem;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+  box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
+    0 1px 3px rgba(0,0,0,.2);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f90),to(#e76a00));
+  background-image: linear-gradient(#f90 10%,#e76a00 100%);
+}
+
+#boton_tirar:hover, #boton_tirar:focus {
+  background-color: #e0811b;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+  background-image: linear-gradient(#f0a100 10%,#f70 100%);
+}
+
+#boton_tirar:active {
+  background-color: #cf6a00;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.2) inset;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#f0a100),to(#f70));
+  background-image: linear-gradient(#f0a100 10%,#f70 100%);
+}
+
+#reglas{
+  color: white;
+  margin-top: 50px;
+  text-align: right;
+  margin-right: 185px;
+  font-family: Cambria;
+}
+
+#textoReglas{
+  text-align: right;
+  font-family: Franklin Gothic Medium;
+  color: white;
+  margin-right: 185px;
+  border-radius: 30px;
+  border-left-width: 789px;
+  background-color: #2E8B57;
+  padding: 10px;
+  margin-left: 770px;
+
+
+}
+
+#nombre{
+  color: gold;
+  margin-top: 50px;
+  font-family: Cambria;
+  font-size: 45px;
+}
+
+#puntosTexto{
+  margin-left: 695px;
+  color: white;
+  font-family: Franklin Gothic Medium;
+}
+
+.rules{
+  background: grey;
+}
+
+#credit
+{
+    margin-top: 20px;
+  margin-left: 730px;
+}
+#credit{
+  position: relative;
+  display: block;
+  padding: 25px 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  max-width: 320px;
+  height: 65px;
+  margin-bottom: 60px;
+  overflow: hidden;
+  color:rgba(255,255,255,1);
+  cursor: pointer;
+  letter-spacing: 2px;
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
+  text-decoration: none;
+  transition: all ease 0.5s;
+  background:#10B87B;
+}
+ 
+#credit:after,
+#credit:before{
+  width: 80px;
+  height: 200px;
+  content: '';
+  display: block;
+  background: rgba(255,255,255,0.5);
+  transform: rotate(45deg);
+  top: -60px;
+  position: absolute;
+  transition: none;
+  right:-45%;
+  cursor: pointer;
+}
+ 
+#creditos:before{
+  left: -48%;
+}
+ 
+#credit:hover{
+  text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+  background:#12C987
+}
+ 
+#credit:hover:after,
+#credit:hover:before{
+  transform: rotate(45deg), scaleX(130%);
+  background: rgba(255,255,255,0.1);
+  transition: all ease 0.5s;
+}
+ 
+#credit:hover:after{
+  right: 130%;
+}
+ 
+#credit:hover:before{
+  left: 130%;
+}
