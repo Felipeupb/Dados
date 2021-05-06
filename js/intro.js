@@ -4,7 +4,7 @@
 	var dado1,dado2,boton_tirar;
 	var suma = 0;
 	var puntos = 0;
-	var turno = 0;
+	var turno = 1;
 
 
 	window.onload = init;
@@ -26,6 +26,7 @@
 	}
 
 	function jugar(){
+
 		tiro_1 = tirardado();//Retorna un numero entre 1 y 6
 		tiro_2 = tirardado();
 		actualizarDado(dado1,tiro_1);
@@ -34,14 +35,28 @@
 
 		suma = tiro_1 + tiro_2;
 
-		if (suma == 7 || suma == 11) 
-		{
 
-			alert("bien");
+		if (turno == 1 && suma == 7 || suma == 11) 
+		{
+			
+			//mostrarMensaje("Ganaste");
+			Swal.fire({
+  				icon:'success',
+  				title:'Ganaste',
+  				text:'You clicked the button!',
+  				
+			});
+			turno = 1;
 		}else
 		 if (suma == 2 || suma == 3 || suma== 12) 
 		{
-
+			//mostrarMensaje("Ganaste");
+			Swal.fire({
+  				icon:'success',
+  				title:'Ganaste',
+  				text:'You clicked the button!',
+  				
+			});
 		}else 
 		{
 			if (turno==1) 
@@ -50,20 +65,33 @@
 			}
 			if (suma == puntos && turno>1) 
 			{
-				//gano
+				//mostrarMensaje("Ganaste");
+				Swal.fire({
+  				icon:'success',
+  				title:'Ganaste',
+  				text:'You clicked the button!',
+  				
+			});
 			}else
 			{
 				if (suma == 7) 
 				{
-					//perdiste
+					//mostrarMensaje("perdiste");
+				Swal.fire({
+				  icon: 'error',
+				  title: 'Perdiste',
+				  text: 'Something went wrong!',
+				});
+					turno = 1;
+					puntos = 0;
 				}else
 				{
-					
+					turno +=1;
 				}
 			}
 		}
 
-		if (suma == 4 || suma == 5 || suma == 6 || suma == 8 || suma == 9 || suma == 10) 
+		/*if (suma == 4 || suma == 5 || suma == 6 || suma == 8 || suma == 9 || suma == 10) 
 		{
 			puntos= suma;
 
@@ -72,5 +100,8 @@
 		{
 			alert("Game Over");
 			window.location.reload();
-		}
+		}*/
+	
 	}
+
+
