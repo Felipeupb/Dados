@@ -4,7 +4,7 @@
 	var dado1,dado2,boton_tirar;
 	var suma = 0;
 	var puntos = 0;
-	var turno = 0;
+	var turno = 1;
 	var punts;
 	var tir;
 
@@ -48,38 +48,69 @@
   				icon:'success',
   				title:'Ganaste',
   				text:'Quieres volver a empezar ?',
-  				
+  				width: 600,
+  				padding: '3em',
+  				background: '#fff url(/images/trees.png)',
+  				backdrop: `
+   				rgba(0,0,123,0.4)
+    			url("https://media.giphy.com/media/3o72FeJnjfZZ31WjBu/source.gif")
+    			left top
+    			no-repeat
+  				`,
 			});
 			turno = 1;
+			tir = document.getElementById("turnos").innerHTML = turno;
 		}else
-		 if (turno == 0 && suma == 2 || suma == 3 || suma== 12) 
+		 if (turno == 1 && suma == 2 || suma == 3 || suma== 12) 
 		{
 			//mostrarMensaje("Ganaste");
 			Swal.fire({
-  				icon:'success',
-  				title:'Ganaste',
-  				text:'Quieres volver a empezar ?',
+  				icon: 'error',
+				title: 'Perdiste',
+				text: 'Quieres volver a empezar ?',
+  				width: 600,
+  				padding: '3em',
+  				background: '#fff url(/images/trees.png)',
+  				backdrop: `
+   				rgba(0,0,123,0.4)
+    			url("https://media.giphy.com/media/5C2n81n1djZ14KfL5h/source.gif")
+    			left top
+    			no-repeat
+  				`,
   				
 			});
-			turno = 0;
+			turno = 1;
+			tir = document.getElementById("turnos").innerHTML = turno;
 		}else 
 		{
-			if (turno == 0) 
+			if (turno == 1) 
 			{
 				puntos = suma;
 				punts = document.getElementById("Puntos").innerHTML= puntos;
 			}
-			if (suma == puntos && turno>0) 
+			if (suma == puntos && turno>1) 
 			{
 				//mostrarMensaje("Ganaste");
 				Swal.fire({
   				icon:'success',
   				title:'Ganaste',
   				text:'Quieres volver a empezar ?',
+  				width: 600,
+  				padding: '3em',
+  				background: '#fff url(/images/trees.png)',
+  				backdrop: `
+   				rgba(0,0,123,0.4)
+    			url("https://media.giphy.com/media/3o72FeJnjfZZ31WjBu/source.gif")
+    			left top
+    			no-repeat
+  				`,
   				
 			});
-				turno = 0;
+
+				turno = 1;
+				tir = document.getElementById("turnos").innerHTML = turno;
 				puntos = 0;
+				punts = document.getElementById("Puntos").innerHTML= puntos;
 			}else
 			{
 				if (suma == 7) 
@@ -89,9 +120,20 @@
 				  icon: 'error',
 				  title: 'Perdiste',
 				  text: 'Quieres volver a empezar ?',
+				  width: 600,
+  				padding: '3em',
+  				background: '#fff url(/images/trees.png)',
+  				backdrop: `
+   				rgba(0,0,123,0.4)
+    			url("https://media.giphy.com/media/5C2n81n1djZ14KfL5h/source.gif")
+    			left top
+    			no-repeat
+  				`,
 				});
-					turno = 0;
+					turno = 1;
+					tir = document.getElementById("turnos").innerHTML = turno;
 					puntos = 0;
+					punts = document.getElementById("Puntos").innerHTML= puntos;
 				}else
 				{
 					turno +=1;
