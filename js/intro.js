@@ -4,7 +4,9 @@
 	var dado1,dado2,boton_tirar;
 	var suma = 0;
 	var puntos = 0;
-	var turno = 1;
+	var turno = 0;
+	var punts;
+	var tir;
 
 
 	window.onload = init;
@@ -36,6 +38,8 @@
 		suma = tiro_1 + tiro_2;
 
 
+
+
 		if (turno == 1 && suma == 7 || suma == 11) 
 		{
 			
@@ -43,35 +47,39 @@
 			Swal.fire({
   				icon:'success',
   				title:'Ganaste',
-  				text:'You clicked the button!',
+  				text:'Quieres volver a empezar ?',
   				
 			});
 			turno = 1;
 		}else
-		 if (suma == 2 || suma == 3 || suma== 12) 
+		 if (turno == 0 && suma == 2 || suma == 3 || suma== 12) 
 		{
 			//mostrarMensaje("Ganaste");
 			Swal.fire({
   				icon:'success',
   				title:'Ganaste',
-  				text:'You clicked the button!',
+  				text:'Quieres volver a empezar ?',
   				
 			});
+			turno = 0;
 		}else 
 		{
-			if (turno==1) 
+			if (turno == 0) 
 			{
 				puntos = suma;
+				punts = document.getElementById("Puntos").innerHTML= puntos;
 			}
-			if (suma == puntos && turno>1) 
+			if (suma == puntos && turno>0) 
 			{
 				//mostrarMensaje("Ganaste");
 				Swal.fire({
   				icon:'success',
   				title:'Ganaste',
-  				text:'You clicked the button!',
+  				text:'Quieres volver a empezar ?',
   				
 			});
+				turno = 0;
+				puntos = 0;
 			}else
 			{
 				if (suma == 7) 
@@ -80,28 +88,21 @@
 				Swal.fire({
 				  icon: 'error',
 				  title: 'Perdiste',
-				  text: 'Something went wrong!',
+				  text: 'Quieres volver a empezar ?',
 				});
-					turno = 1;
+					turno = 0;
 					puntos = 0;
 				}else
 				{
 					turno +=1;
+					tir = document.getElementById("turnos").innerHTML = turno;
 				}
 			}
 		}
-
-		/*if (suma == 4 || suma == 5 || suma == 6 || suma == 8 || suma == 9 || suma == 10) 
-		{
-			puntos= suma;
-
-		}else 
-		if ( puntos == 0 && suma == 7) 
-		{
-			alert("Game Over");
-			window.location.reload();
-		}*/
 	
 	}
 
+	
+	
+	
 
